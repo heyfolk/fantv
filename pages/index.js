@@ -35,7 +35,7 @@ function Home() {
         setSChannels(thisChannels);
     }
 
-    function getPlayerUrl(data) {
+    function getPlayerUrl(data,index) {
         localStorage.setItem("channel", JSON.stringify(data));
         mRouter.push("/player");
     }
@@ -44,7 +44,7 @@ function Home() {
         <>
             <Header />
             <Navbar />
-            <div className="row">
+            <div className="row p-1" style={{margin:0}}>
                 {sChannels.map((channel, i) => (
                     <Channel sendUrl={getPlayerUrl} key={i} data={channel} />
                 ))}

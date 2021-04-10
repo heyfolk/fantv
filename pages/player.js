@@ -27,6 +27,10 @@ function Player(props) {
         hlsPlayer.currentLevel = 0;
     }
 
+    function showPlaybackError(){
+        $(".error").css("display","block")
+    }
+
     return (
         <div>
             <Header />
@@ -37,6 +41,7 @@ function Player(props) {
                     <ReactPlayer
                     width={'98%'}
                         onReady={(player) => getPalyerInstance(player)}
+                        onError={()=>showPlaybackError()}
                         playing={true}
                         controls={true}
                         url={mUrl}
@@ -82,6 +87,30 @@ function Player(props) {
                             >
                                 720p
                             </button>
+                        </div>
+                    </div>
+                    <h3 className="text-danger error" style={{display:"none"}}>Error occoured!</h3>
+                    <div className="nextPrev">
+                    <div
+                            class="btn-group"
+                            role="group"
+                            aria-label="Basic example"
+                        >
+                            <button
+                                type="button"
+                                // onClick={()=>setQuality(0)}
+                                class="btn btn-secondary"
+                            >
+                                Previous
+                            </button>
+                            <button
+                                type="button"
+                                // onClick={()=>setQuality(1)}
+                                class="btn btn-secondary"
+                            >
+                                Next
+                            </button>
+                           
                         </div>
                     </div>
                 </div>
