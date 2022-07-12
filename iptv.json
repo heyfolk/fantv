@@ -1,0 +1,49 @@
+[
+{
+    "name": "Zee Tv",
+    "logo": "https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetvhd/channel_web/1170x658withlog1554775145.png",
+    "url": "http://iamsom.1.mywebsites.link/zee5/telegram_iamsom5.php?c=0-9-zeetvhd",
+    "category": "Entertainment",
+    "languages": [
+        {
+            "code": "hin",
+            "name": "Hindi"
+        }
+    ],
+    "countries": [
+        {
+            "code": "in",
+            "name": "India"
+        }
+    ],
+    "tvg": {
+        "id": "zeetv",
+        "name": "Zee Tv",
+        "url": null
+    }
+},
+{
+    "name": "SONY SAB HD",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB.png",
+    "url": "https://pubads.g.doubleclick.net/ssai/event/UI4QFJ_uRk6aLxIcADqa_A/master.m3u8",
+    "category": "Entertainment",
+    "languages": [
+        {
+            "code": "hin",
+            "name": "Hindi"
+        }
+    ],
+    "countries": [
+        {
+            "code": "in",
+            "name": "India"
+        }
+    ],
+    "tvg": {
+        "id": "sabtv",
+        "name": "SONY SAB HD",
+        "url": null
+    }
+}
+
+]
